@@ -1,0 +1,40 @@
+{
+  "platform" : "ststm32",
+  "build": {
+    "cpu": "cortex-m0",
+    "extra_flags": "-DSTM32F072xB",
+    "f_cpu": "48000000L",
+	"variant": "PILL_F072C8",
+    "mcu": "stm32f072c8t6"
+  },
+  "debug": {
+    "default_tools": [
+      "jlink"
+    ],
+    "jlink_device": "STM32F072C8",
+    "onboard_tools": [
+      "stlink"
+    ],
+    "openocd_board": "st_nucleo_f0",
+    "svd_path": "STM32F072x.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "mbed",
+    "stm32cube"
+  ],
+  "name": "GreenPill STM32F072C8",
+  "upload": {
+    "maximum_ram_size": 16384,
+    "maximum_size": 65536,
+    "protocol": "jlink",
+    "protocols": [
+      "jlink",
+      "stlink",
+      "blackmagic",
+      "mbed"
+    ]
+  },
+  "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f072c8.html",
+  "vendor": "ST"
+}
