@@ -1,0 +1,40 @@
+{
+  "platform" : "ststm32",
+  "build": {
+    "cpu": "cortex-m0",
+    "extra_flags": "-DSTM32F030xC",
+    "f_cpu": "48000000L",
+	"variant": "PILL_F030CC",
+    "mcu": "stm32f030cct6"
+  },
+  "debug": {
+    "default_tools": [
+      "jlink"
+    ],
+    "jlink_device": "STM32F030CC",
+    "onboard_tools": [
+      "stlink"
+    ],
+    "openocd_board": "st_nucleo_f0",
+    "svd_path": "STM32F030.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "mbed",
+    "stm32cube"
+  ],
+  "name": "GreenPill STM32F030CC",
+  "upload": {
+    "maximum_ram_size": 32768,
+    "maximum_size": 262144,
+    "protocol": "jlink",
+    "protocols": [
+      "jlink",
+      "stlink",
+      "blackmagic",
+      "mbed"
+    ]
+  },
+  "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f030cc.html",
+  "vendor": "ST"
+}
